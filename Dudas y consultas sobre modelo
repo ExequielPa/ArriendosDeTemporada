@@ -1,0 +1,52 @@
+Hola Carla, acá van las observaciones que encontré en la propuesta:
+
+El check-IN y check-OUT lo hace el cliente (pasajero) y no el funcionario
+Revisar la relación de funcionario con cliente, me queda la duda si corresponde al problema
+Entidad acondicionado, qué refleja?, no se entiende
+Les indique que era aconsejable EVITAR los sub-tipos, es para que no tengan complicaciones posteriores a la hora de administrar las tablas
+Los conceptos de "arriendo diario", "arriendo futuro", ¿qué representan?
+Un acompañante puede estar asociado con varios clientes: una persona primero puede alojarse con su mamá y luego con su papá ... ¿cómo se refleja eso en el modelo?
+Disponibilidad como entidad?, se sugiere revisar
+Entidades vacías y solitarias?
+Dónde se reflejan los servicios especiales de tour, traslados y por ende sus precios; recuerden que deben hacer el cobro al final de la estadía
+Cuándo se entrega el departamento se debe revisar el estado de los elementos que están en el departamento de forma que al momento de retirarse esté todo en el mismo estado en el cual fue estaba; de lo contrario se van a cobrar multas, dónde aparece eso?
+Si existe un tour al Volcán Osorno, por ejemplo, y se hace 5 veces a la semana, lo van a registrar 5 veces? y cada mes tiene 4 semanas, serán 20 registros ....
+Entiendo que no se pueden registrar acompañantes extranjeros, ¿por qué no se podrá?
+El modelo, en general, transgrede las formas normales, se sugiere revisar bien
+ 
+
+Respecto de sus preguntas:
+
+ 
+
+1.según el caso, hay dos clientes, que está el cliente y el cliente frecuente, por lo que dejamos como cliente frecuente en un subtipo para que herede los mismos datos de cliente, pero tenemos la duda de si pueden haber subtipos? o sería mejor separarlos
+RESPUESTA
+
+En lo personal, trato de evitar el uso de jerarquías en modelamiento de datos, es complejo llevarlo a la práctica. Yo les envíe un correo con esa recomendación
+
+
+2.un servicio extra puede ser el transporte o tour? ya que solo se menciona a los clientes frecuentes
+RESPUESTA
+
+Yo los veo como servicios extra
+
+
+3.dejar un atributo como amoblado o especificar lo que trae (cama, mesa, sillas)
+RESPUESTA
+
+Eso depende de si quieres revisar para multar en caso de deterioro del “inventario” del departamento
+
+
+4.el inventario que se explica en el caso, se refiere a cosas como la pasta de diente, toallas, jabón? o se refiere a otras cosas?
+RESPUESTA
+
+Quizás no tan especifico, sino más bien a las cosas que si se dañan o rompen sería costoso reponer o reparar, por ejemplo, televisores, decodificadores, llaves del baño, cocina … hay situaciones en que incluyen en el inventario hasta las cucharas y vasos … eso lo deben permitir ustedes, para que su aplicación sea adaptable
+
+
+5.las mejoras y reparaciones van dentro de la mantención? o se separarian en 3 tablas distintas?
+
+RESPUESTA
+
+Las reparaciones a veces son por el mal uso que le hacen los arrendatarios y otras es por fallas “naturales”
+
+ 
