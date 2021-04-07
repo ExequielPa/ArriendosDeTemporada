@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B64D9E9E-D8E0-8C8E-F8EC-4BBE8CB4D50E" name="multa">
+<createdBy>javie</createdBy>
+<createdTime>2021-03-28 01:12:50 UTC</createdTime>
+<ownerDesignName>arriendo</ownerDesignName>
+<engineerTo>
+<item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="descripcion " id="613327A6-ABBA-A0EE-8FE9-97C8176A95B1">
+<createdBy>javie</createdBy>
+<createdTime>2021-03-28 01:13:43 UTC</createdTime>
+<ownerDesignName>arriendo</ownerDesignName>
+<engineerTo>
+<item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="monto " id="C8645621-F5C9-51E1-A182-428832CE9E51">
+<createdBy>javie</createdBy>
+<createdTime>2021-03-28 01:15:09 UTC</createdTime>
+<ownerDesignName>arriendo</ownerDesignName>
+<engineerTo>
+<item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_check_out" id="39745FED-2A41-227E-5631-7F7DB7A388E9">
+<createdBy>Wilson</createdBy>
+<createdTime>2021-04-05 07:33:40 UTC</createdTime>
+<generatorID>2DAA1689-4816-FABB-6D59-2001C564135A</generatorID>
+<ownerDesignName>arriendo</ownerDesignName>
+<engineerTo>
+<item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
+</engineerTo>
+<referedAttribute>641CF5AC-3780-8935-6F3E-60E02A9B8004</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CA2B45D7-BA10-12B2-DD82-B0CD5CB45B09" name="multa PK">
+<createdBy>javie</createdBy>
+<createdTime>2021-03-28 01:13:35 UTC</createdTime>
+<ownerDesignName>arriendo</ownerDesignName>
+<engineerTo>
+<item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>39745FED-2A41-227E-5631-7F7DB7A388E9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="ECCD99D9-CF4E-A155-A497-39E5A19DD657" name="tipo_servicio">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-05 21:17:02 UTC</createdTime>
+<ownerDesignName>arriendo</ownerDesignName>
+<engineerTo>
+<item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_servicio" id="E6734B03-6E55-B495-1132-AF0589299FC5">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-05 21:17:19 UTC</createdTime>
+<ownerDesignName>arriendo</ownerDesignName>
+<engineerTo>
+<item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre_servicio" id="62364BE5-46C7-BC1D-5E54-3BC9422EC488">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-05 21:17:20 UTC</createdTime>
+<ownerDesignName>arriendo</ownerDesignName>
+<engineerTo>
+<item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>75</dataTypeSize>
+<ownDataTypeParameters>75,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descripcion" id="59C92DC5-C2BF-EC2F-9CD8-EA308E80CACD">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-05 21:17:20 UTC</createdTime>
+<ownerDesignName>arriendo</ownerDesignName>
+<engineerTo>
+<item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hora_inicio" id="9D6FE73E-62CB-58C5-BCAA-3E9D8010D7FD">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-05 21:17:20 UTC</createdTime>
+<ownerDesignName>arriendo</ownerDesignName>
+<engineerTo>
+<item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hora_fin" id="334F2C98-AD1F-E01A-AE66-C0240B99CA99">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-05 21:18:03 UTC</createdTime>
+<ownerDesignName>arriendo</ownerDesignName>
+<engineerTo>
+<item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_servi" id="FDF5533E-60AE-283F-80A4-C74386472FFE">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-05 21:18:30 UTC</createdTime>
+<generatorID>6383A287-6ED8-E33A-F0C9-7D137635B4FF</generatorID>
+<ownerDesignName>arriendo</ownerDesignName>
+<engineerTo>
+<item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
+</engineerTo>
+<referedAttribute>9933D7E1-C8A5-9E23-FADC-A79F10C84CA6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9C3DAED4-2EE9-8326-F81A-97E3F4CF5A98" name="tipo_servicio PK">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-05 21:17:29 UTC</createdTime>
+<ownerDesignName>arriendo</ownerDesignName>
+<engineerTo>
+<item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E6734B03-6E55-B495-1132-AF0589299FC5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
