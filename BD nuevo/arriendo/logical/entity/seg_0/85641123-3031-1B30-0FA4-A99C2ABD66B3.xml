@@ -127,6 +127,20 @@
 <dataTypeSize>10</dataTypeSize>
 <ownDataTypeParameters>10,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id_dpto" id="DDD076DE-7450-FDF7-DBF7-1BCA147B385B">
+<createdBy>Admin</createdBy>
+<createdTime>2021-04-07 19:05:51 UTC</createdTime>
+<generatorID>25EDEF98-7137-3075-8BC9-65D6C7BD143A</generatorID>
+<ownerDesignName>arriendo</ownerDesignName>
+<engineerTo>
+<item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
+</engineerTo>
+<referedAttribute>A19638ED-FD66-D3C4-72F6-05B26C582096</referedAttribute>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="A1E29E70-01D8-B700-EB46-AA2713C202F7" name="arriendo PK">

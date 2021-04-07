@@ -65,7 +65,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>6</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="id_mantecion " id="E377F7A8-CE92-A988-8A37-F688933727C8">
 <createdBy>Wilson</createdBy>
@@ -80,6 +80,20 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_dpto" id="E5F23D52-8C31-7D53-00C4-02ED908D1B95">
+<createdBy>Admin</createdBy>
+<createdTime>2021-04-07 19:05:51 UTC</createdTime>
+<generatorID>D1B2E5FF-6C75-21E9-BE87-C72D1019D779</generatorID>
+<ownerDesignName>arriendo</ownerDesignName>
+<engineerTo>
+<item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
+</engineerTo>
+<referedAttribute>A19638ED-FD66-D3C4-72F6-05B26C582096</referedAttribute>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
@@ -94,6 +108,7 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>DBC8A820-CE7E-8C8F-806D-156A32015EEF</attributeRef>
+<attributeRef>E5F23D52-8C31-7D53-00C4-02ED908D1B95</attributeRef>
 <attributeRef>E377F7A8-CE92-A988-8A37-F688933727C8</attributeRef>
 </usedAttributes>
 </identifier>

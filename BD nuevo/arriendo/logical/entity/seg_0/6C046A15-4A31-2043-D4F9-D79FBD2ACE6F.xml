@@ -15,18 +15,18 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="num_depto" id="1FBBDB09-A5AB-59AE-D24D-A0F8BBC32055">
-<createdBy>alanb</createdBy>
-<createdTime>2021-03-27 18:43:53 UTC</createdTime>
+<Attribute name="id_dpto" id="A19638ED-FD66-D3C4-72F6-05B26C582096">
+<createdBy>Admin</createdBy>
+<createdTime>2021-04-07 19:05:24 UTC</createdTime>
 <ownerDesignName>arriendo</ownerDesignName>
 <engineerTo>
 <item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>6</dataTypePrecision>
-<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="direccion" id="5E5EA110-1551-15BC-F873-EB83EEB12545">
 <createdBy>javie</createdBy>
@@ -41,7 +41,7 @@
 <dataTypeSize>200</dataTypeSize>
 <ownDataTypeParameters>200,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="descripcion" id="0F27D249-1FF5-9910-15FD-CA04A9F724AC">
+<Attribute name="num_depto" id="1FBBDB09-A5AB-59AE-D24D-A0F8BBC32055">
 <createdBy>alanb</createdBy>
 <createdTime>2021-03-27 18:43:53 UTC</createdTime>
 <ownerDesignName>arriendo</ownerDesignName>
@@ -50,9 +50,9 @@
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>1000</dataTypeSize>
-<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="region" id="F53A053D-7283-20CF-5904-FDB157DAA34C">
 <createdBy>javie</createdBy>
@@ -66,6 +66,19 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>20</dataTypeSize>
 <ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descripcion" id="0F27D249-1FF5-9910-15FD-CA04A9F724AC">
+<createdBy>alanb</createdBy>
+<createdTime>2021-03-27 18:43:53 UTC</createdTime>
+<ownerDesignName>arriendo</ownerDesignName>
+<engineerTo>
+<item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="foto" id="1D878A35-EA6E-AD1E-F7EF-45282906CB59">
 <createdBy>javie</createdBy>
@@ -120,6 +133,7 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>1FBBDB09-A5AB-59AE-D24D-A0F8BBC32055</attributeRef>
+<attributeRef>A19638ED-FD66-D3C4-72F6-05B26C582096</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
