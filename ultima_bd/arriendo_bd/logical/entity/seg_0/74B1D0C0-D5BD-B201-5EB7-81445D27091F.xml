@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="74B1D0C0-D5BD-B201-5EB7-81445D27091F" name="CHECK_IN">
+<createdBy>javie</createdBy>
+<createdTime>2021-03-26 22:12:37 UTC</createdTime>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<engineerTo>
+<item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_check_in" id="E39A7432-654B-3349-7602-8FFF9584D136">
+<createdBy>alanb</createdBy>
+<createdTime>2021-03-28 23:33:53 UTC</createdTime>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<engineerTo>
+<item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_inicio" id="1BC4B2A8-6321-4F61-7813-419F25ED4D70">
+<createdBy>javie</createdBy>
+<createdTime>2021-03-26 22:53:40 UTC</createdTime>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<engineerTo>
+<item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hora" id="32BA82E3-850B-B885-E62C-3C50EAC6765C">
+<createdBy>javie</createdBy>
+<createdTime>2021-03-28 01:31:20 UTC</createdTime>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<engineerTo>
+<item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="condicion" id="02FB8158-E8E0-156A-6221-DBB7FB354FC1">
+<createdBy>javie</createdBy>
+<createdTime>2021-03-28 01:31:36 UTC</createdTime>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<engineerTo>
+<item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="monto" id="A35405ED-4625-A7CC-9A55-1712EEBB6BC3">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-07 02:07:33 UTC</createdTime>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<engineerTo>
+<item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8A613D1C-47A9-2A4A-32DB-C1C740702E0A" name="CHECK_IN PK">
+<createdBy>alanb</createdBy>
+<createdTime>2021-03-28 23:34:06 UTC</createdTime>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<engineerTo>
+<item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E39A7432-654B-3349-7602-8FFF9584D136</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

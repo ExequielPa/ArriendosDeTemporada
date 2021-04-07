@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2CE39400-A462-9EC9-AEDB-F23B4D601709" name="funcionario">
+<createdBy>javie</createdBy>
+<createdTime>2021-03-26 01:27:04 UTC</createdTime>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<engineerTo>
+<item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="rut_funcionario" id="6183561D-414F-F833-4354-5ED0A673CEDF">
+<createdBy>javie</createdBy>
+<createdTime>2021-03-26 01:27:59 UTC</createdTime>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<engineerTo>
+<item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre " id="84E911D9-BA7B-64ED-53BF-284DFF4ED00F">
+<createdBy>javie</createdBy>
+<createdTime>2021-03-26 01:27:17 UTC</createdTime>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<engineerTo>
+<item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="apellido_p" id="1F3B5249-1EAC-6704-9C8D-6810D6BF6520">
+<createdBy>javie</createdBy>
+<createdTime>2021-03-26 01:27:22 UTC</createdTime>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<engineerTo>
+<item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="apellido_a" id="50668892-EB28-2487-FEB9-F203255E45C2">
+<createdBy>javie</createdBy>
+<createdTime>2021-03-26 01:28:24 UTC</createdTime>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<engineerTo>
+<item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="direccion" id="A0A4C46F-933E-FD34-5D1D-7206E3B34815">
+<createdBy>Wilson</createdBy>
+<createdTime>2021-04-05 08:08:41 UTC</createdTime>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<engineerTo>
+<item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="contacto" id="162A8246-EF78-B9A7-4B32-3D808147E700">
+<createdBy>Wilson</createdBy>
+<createdTime>2021-04-05 08:09:11 UTC</createdTime>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<engineerTo>
+<item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>30</dataTypePrecision>
+<ownDataTypeParameters>,30,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="correo" id="A89D7BCF-7969-93C1-28DF-429CDFCBFE24">
+<createdBy>Wilson</createdBy>
+<createdTime>2021-04-05 08:09:46 UTC</createdTime>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<engineerTo>
+<item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rol" id="708741C1-58B4-5DAA-9EFF-B66F91A5E67C">
+<createdBy>Wilson</createdBy>
+<createdTime>2021-04-05 08:10:01 UTC</createdTime>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<engineerTo>
+<item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="AB96B4DA-648C-2B0F-AA0F-3584098CA58D" name="empleado PK">
+<createdBy>javie</createdBy>
+<createdTime>2021-03-26 01:28:17 UTC</createdTime>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<engineerTo>
+<item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6183561D-414F-F833-4354-5ED0A673CEDF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

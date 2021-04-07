@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="536265E6-18DE-493B-BC87-1FC932420C09" name="checkeo">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-07 21:26:50 UTC</createdTime>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<engineerTo>
+<item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="estado_in" id="81E87F9E-F4A2-D3DD-9384-445B1EAA8A5E">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-07 21:26:58 UTC</createdTime>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<engineerTo>
+<item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="estado_out" id="B6E97BEA-47F6-2A59-B488-7EEE0EEB41C0">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-07 21:30:32 UTC</createdTime>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<engineerTo>
+<item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_in" id="D640F6FD-D5CB-DCFB-4AAA-49EF11C3EE07">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-07 21:26:58 UTC</createdTime>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<engineerTo>
+<item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_out" id="E3BCD239-941C-15B8-3FEC-FC91804B9A17">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-07 21:26:58 UTC</createdTime>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<engineerTo>
+<item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_inventario" id="DACFA261-FD84-D362-8191-4D6FC0BC4A9B">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-07 22:34:38 UTC</createdTime>
+<generatorID>D7FD12AB-AF82-8963-5BD0-D246EDBD51BD</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<engineerTo>
+<item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
+</engineerTo>
+<referedAttribute>E67A74F1-E487-F175-43C2-3C44943EE9D5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_arriendo" id="C264FEC8-5309-3711-792E-DF287C130D52">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-07 22:34:56 UTC</createdTime>
+<generatorID>5F5B72D7-1016-BAA9-8A9D-3BA213A3353A</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<engineerTo>
+<item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
+</engineerTo>
+<referedAttribute>B8CC22E8-956C-F25F-7C75-5DAE1F5FCC5F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="482C72C5-A842-76B9-5235-340E33266561" name="checkeo PK">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-07 21:28:15 UTC</createdTime>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<engineerTo>
+<item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C264FEC8-5309-3711-792E-DF287C130D52</attributeRef>
+<attributeRef>DACFA261-FD84-D362-8191-4D6FC0BC4A9B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
