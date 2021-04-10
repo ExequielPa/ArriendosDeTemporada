@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_inventario" id="E67A74F1-E487-F175-43C2-3C44943EE9D5">
+<Attribute name="id_inv" id="E67A74F1-E487-F175-43C2-3C44943EE9D5">
 <createdBy>javie</createdBy>
 <createdTime>2021-03-31 20:55:56 UTC</createdTime>
 <ownerDesignName>arriendo_bd</ownerDesignName>
@@ -24,11 +24,11 @@
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>20</dataTypeSize>
-<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="nombre_articulo" id="FF6736D9-9142-1A8D-05E7-61DA803C04C6">
+<Attribute name="nombre_arti" id="FF6736D9-9142-1A8D-05E7-61DA803C04C6">
 <createdBy>javie</createdBy>
 <createdTime>2021-03-31 22:27:12 UTC</createdTime>
 <ownerDesignName>arriendo_bd</ownerDesignName>
@@ -41,7 +41,7 @@
 <dataTypeSize>150</dataTypeSize>
 <ownDataTypeParameters>150,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="tipo_articulo" id="C2872C7E-BC1C-ADFF-4A01-BD24BB22F880">
+<Attribute name="tipo_arti" id="C2872C7E-BC1C-ADFF-4A01-BD24BB22F880">
 <createdBy>javie</createdBy>
 <createdTime>2021-03-31 22:27:56 UTC</createdTime>
 <ownerDesignName>arriendo_bd</ownerDesignName>
@@ -54,7 +54,7 @@
 <dataTypeSize>150</dataTypeSize>
 <ownDataTypeParameters>150,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="valor_articulo" id="0FD38D6D-22B5-12F6-77D9-03E58DF65CDB">
+<Attribute name="valor_arti" id="0FD38D6D-22B5-12F6-77D9-03E58DF65CDB">
 <createdBy>alanb</createdBy>
 <createdTime>2021-04-07 21:37:59 UTC</createdTime>
 <ownerDesignName>arriendo_bd</ownerDesignName>
@@ -78,9 +78,10 @@
 <referedAttribute>955B25E4-4F4D-FADC-A07C-733C1364507C</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
 <dataTypeSize>10</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

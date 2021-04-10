@@ -24,9 +24,9 @@
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10</dataTypeSize>
-<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="num_depto" id="1FBBDB09-A5AB-59AE-D24D-A0F8BBC32055">
 <createdBy>alanb</createdBy>
@@ -99,8 +99,9 @@
 <createdBy>alanb</createdBy>
 <createdTime>2021-03-27 18:44:25 UTC</createdTime>
 <ownerDesignName>arriendo_bd</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
+<item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

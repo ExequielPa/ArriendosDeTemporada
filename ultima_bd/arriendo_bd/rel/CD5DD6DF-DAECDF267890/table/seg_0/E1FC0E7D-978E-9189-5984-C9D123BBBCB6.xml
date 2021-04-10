@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E1FC0E7D-978E-9189-5984-C9D123BBBCB6" name="inventario">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-10 18:50:56 UTC</createdTime>
+<generatorID>D01FE484-4383-57B9-2804-59F3EC477DC2</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_inv" id="000F6C33-D876-D6A8-86A0-C0C65AD98730">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-10 18:50:56 UTC</createdTime>
+<generatorID>E67A74F1-E487-F175-43C2-3C44943EE9D5</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_arti" id="A90BFD56-0C70-61C9-E3F9-A39C20EDFE61">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-10 18:50:56 UTC</createdTime>
+<generatorID>FF6736D9-9142-1A8D-05E7-61DA803C04C6</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_arti" id="8FEDB5B2-2688-7EAA-2C72-E262486D5B11">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-10 18:50:56 UTC</createdTime>
+<generatorID>C2872C7E-BC1C-ADFF-4A01-BD24BB22F880</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valor_arti" id="A057A4C2-7D50-5D4A-24D5-BADBD5E535C9">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-10 18:50:56 UTC</createdTime>
+<generatorID>0FD38D6D-22B5-12F6-77D9-03E58DF65CDB</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dpto_id_dpto" id="B1F7A1EC-0116-798E-DF7D-DB6E5590222D">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-10 18:50:56 UTC</createdTime>
+<generatorID>F8BB96C5-C166-2E18-51FA-D9D643D38921</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A2BD64B3-6DF3-473F-AD02-73F715E1B2A2" referredColumn="55BC3DB2-DC93-812A-ECD8-9F59943FA4E8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EE8D9B3C-B20C-DFBF-C2C2-B8AAD933CB39" name="inventario_PK">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-10 18:50:56 UTC</createdTime>
+<generatorID>89D2D6FA-2FF9-612E-FEA3-1B0B415A5076</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="000F6C33-D876-D6A8-86A0-C0C65AD98730"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1697BBCA-C71B-57B5-FFD3-24E9D66267A2" name="inventario_dpto_FK">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-10 18:50:56 UTC</createdTime>
+<generatorID>910F3B3B-3872-46A2-2364-2B49FD1D5F1A</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B1F7A1EC-0116-798E-DF7D-DB6E5590222D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9A572F2D-641E-3993-1E78-24A59CA10924" name="transporte">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-07 23:19:30 UTC</createdTime>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_transporte" id="8C8AB3F3-CF32-EF48-27F1-025F61F03A6A">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-07 23:21:34 UTC</createdTime>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="chofer" id="CDFEF782-44DB-ADF2-1950-895E4F9EB0B1">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-07 23:21:34 UTC</createdTime>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vehiculo" id="55A88F43-BDB2-AC0A-4869-4D8E8C050D76">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-07 23:21:34 UTC</createdTime>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="punto_reunion" id="36A63C2E-31BE-47B6-CAD2-7107935AEF25">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-07 23:22:57 UTC</createdTime>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="horario_inicio" id="3D5670EE-CA59-725E-9BA7-7F73E91C37D6">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-07 23:22:57 UTC</createdTime>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="horario_fin" id="197519C0-FE94-C8F2-9E8D-F78842729F95">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-07 23:24:31 UTC</createdTime>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="valor" id="5AB5D195-4232-32A2-6FB2-D1C28C0B5FAB">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-07 23:31:05 UTC</createdTime>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="32D2413E-78B4-6F81-96F6-CC5D9FD73591" name="transport PK">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-07 23:21:44 UTC</createdTime>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8C8AB3F3-CF32-EF48-27F1-025F61F03A6A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

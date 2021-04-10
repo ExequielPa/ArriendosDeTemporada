@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8A5FCC73-6B86-B397-EEF2-D50D31BC1CB3" name="transporte">
-<createdBy>javie</createdBy>
-<createdTime>2021-03-26 18:18:09 UTC</createdTime>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6E9038E7-56B5-7C9C-55FE-CF18CF52ECDB" name="det_serv_extra">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-07 23:18:23 UTC</createdTime>
 <ownerDesignName>arriendo_bd</ownerDesignName>
 <engineerTo>
 <item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="patente" id="F90D2E42-A35E-5A33-C532-D40080AB6A3E">
-<createdBy>Wilson</createdBy>
-<createdTime>2021-04-05 08:03:39 UTC</createdTime>
+<Attribute name="descripcion" id="BE5F58EA-F80F-1667-A915-5FA88B11E1D8">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-07 23:32:52 UTC</createdTime>
 <ownerDesignName>arriendo_bd</ownerDesignName>
 <engineerTo>
 <item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
@@ -28,34 +28,9 @@
 <dataTypeSize>50</dataTypeSize>
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="horario" id="E82E3BCD-DB87-C109-976D-F37E06AAB47B">
+<Attribute name="cant_serv" id="2DA707EC-3DBD-CAB6-A169-7EBE6F7F4E19">
 <createdBy>alanb</createdBy>
-<createdTime>2021-03-27 01:03:24 UTC</createdTime>
-<ownerDesignName>arriendo_bd</ownerDesignName>
-<engineerTo>
-<item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT014</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="vehiculo" id="CCB109E3-27A0-F2DE-6968-0AED8575239C">
-<createdBy>alanb</createdBy>
-<createdTime>2021-03-27 01:03:24 UTC</createdTime>
-<ownerDesignName>arriendo_bd</ownerDesignName>
-<engineerTo>
-<item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>20</dataTypeSize>
-<ownDataTypeParameters>20,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="conductor" id="2F2710C2-1C99-5955-C61F-767BA544471D">
-<createdBy>alanb</createdBy>
-<createdTime>2021-03-27 01:03:24 UTC</createdTime>
+<createdTime>2021-04-07 23:32:52 UTC</createdTime>
 <ownerDesignName>arriendo_bd</ownerDesignName>
 <engineerTo>
 <item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
@@ -66,45 +41,65 @@
 <dataTypeSize>50</dataTypeSize>
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_servi" id="1AEAB772-7F24-7D23-3791-7B976D56A168">
-<createdBy>Wilson</createdBy>
-<createdTime>2021-04-05 08:05:57 UTC</createdTime>
-<generatorID>741489BA-2EFF-2049-CF95-E8FC81F14B4C</generatorID>
+<Attribute name="id_tour" id="F3FC0ABB-6EDE-A520-A258-B1767A137637">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-07 23:39:49 UTC</createdTime>
+<generatorID>1F925A1A-F208-FA04-4973-4162317B3DD0</generatorID>
 <ownerDesignName>arriendo_bd</ownerDesignName>
 <engineerTo>
 <item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
 </engineerTo>
-<referedAttribute>9933D7E1-C8A5-9E23-FADC-A79F10C84CA6</referedAttribute>
+<referedAttribute>9348C584-86C7-14BD-21AD-BA57BC0FCCAD</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="dire_lugar" id="D6621780-B471-7AB5-6F88-44B9E889782A">
-<createdBy>Wilson</createdBy>
-<createdTime>2021-04-05 08:16:58 UTC</createdTime>
+<Attribute name="id_transporte" id="BCC5717E-2884-F511-5E7A-8D1E4098386B">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-07 23:40:01 UTC</createdTime>
+<generatorID>75F9EB3B-3B8A-8616-6DB8-2720DEAA7F83</generatorID>
 <ownerDesignName>arriendo_bd</ownerDesignName>
 <engineerTo>
 <item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
 </engineerTo>
+<referedAttribute>8C8AB3F3-CF32-EF48-27F1-025F61F03A6A</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>200</dataTypeSize>
-<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_reserva" id="3662A1D3-AFFF-90CB-68F0-35BC61D78B8D">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-07 23:44:47 UTC</createdTime>
+<generatorID>150CF6A6-EECF-4545-24D7-269CF8241C3E</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<engineerTo>
+<item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
+</engineerTo>
+<referedAttribute>B8CC22E8-956C-F25F-7C75-5DAE1F5FCC5F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="448CD077-323D-75DB-4B44-5FB0AA454802" name="transporte PK">
-<createdBy>Wilson</createdBy>
-<createdTime>2021-04-05 08:03:51 UTC</createdTime>
+<identifier id="17B69A47-1A04-832A-42DB-76738529592C" name="det_serv_extra PK">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-07 23:27:29 UTC</createdTime>
 <ownerDesignName>arriendo_bd</ownerDesignName>
 <engineerTo>
 <item key="5AD34EB8-9347-687E-5620-8A9F3E7ED4B7" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>F90D2E42-A35E-5A33-C532-D40080AB6A3E</attributeRef>
+<attributeRef>F3FC0ABB-6EDE-A520-A258-B1767A137637</attributeRef>
+<attributeRef>BCC5717E-2884-F511-5E7A-8D1E4098386B</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

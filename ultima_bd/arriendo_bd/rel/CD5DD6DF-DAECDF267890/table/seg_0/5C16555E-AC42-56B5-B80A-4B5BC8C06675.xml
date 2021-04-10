@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5C16555E-AC42-56B5-B80A-4B5BC8C06675" name="mantencion">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-10 18:50:56 UTC</createdTime>
+<generatorID>E7236BAE-FF9B-7BF5-B0BE-BDF0C350ED7A</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_mantecion" id="943002F5-2725-F99F-4FE5-5C19034C3AB0">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-10 18:50:56 UTC</createdTime>
+<generatorID>88F9BDDD-B8E0-EED4-E231-A037D1B57E2A</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="3EB9548F-F739-61AD-4A4D-AEB0378FC3B6">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-10 18:50:56 UTC</createdTime>
+<generatorID>D0BB8E92-2F86-DC9D-D6F3-690F3B0087AA</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valor" id="021F46BD-C43B-2BDE-1893-364D1C5BB3D6">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-10 18:50:56 UTC</createdTime>
+<generatorID>E128E100-1E5C-D332-BA4C-6731CA227CFD</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_ini" id="0A6A3F7C-6410-281F-E77E-03029B6D243E">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-10 18:50:56 UTC</createdTime>
+<generatorID>BAC6C74C-517D-3440-EC4A-8C04BC8231F6</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_term" id="03F88C74-5859-95AC-F074-31891F561EBF">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-10 18:50:56 UTC</createdTime>
+<generatorID>544539AD-8ED6-F633-6182-344D2950EE64</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dpto_id_dpto" id="A04CD15E-62F9-1562-D164-5E123071E8AF">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-10 18:50:56 UTC</createdTime>
+<generatorID>F483C6FF-78E6-CA08-A0D5-FD556ACAB120</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DA889EE1-89B4-FFDB-2CC6-9E4747F67245" referredColumn="55BC3DB2-DC93-812A-ECD8-9F59943FA4E8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A58396A6-4C0D-4740-F3B2-3D47D556338B" name="mantencion_PK">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-10 18:50:56 UTC</createdTime>
+<generatorID>1456C1F4-96EB-73C8-8416-6C9580D8C825</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="943002F5-2725-F99F-4FE5-5C19034C3AB0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9772FB63-202B-AB45-ED1A-C62FA2403387" name="mantencion_dpto_FK">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-10 18:50:56 UTC</createdTime>
+<generatorID>7960ED66-ED7C-AD5D-518F-A7D4DFC26AA0</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A04CD15E-62F9-1562-D164-5E123071E8AF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

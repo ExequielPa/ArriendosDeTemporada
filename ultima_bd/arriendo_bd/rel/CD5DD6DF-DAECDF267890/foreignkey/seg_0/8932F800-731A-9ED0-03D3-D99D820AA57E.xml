@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8932F800-731A-9ED0-03D3-D99D820AA57E" containerWithKeyObject="43D98EC1-F4FA-818C-C822-0132FD40270D" localFKIndex="4C25AEDF-8A5C-96A5-CB43-46B98F34A9D6" name="multa_checkeo_FK">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-10 18:50:56 UTC</createdTime>
+<generatorID>14F16D7C-FC62-1366-F041-61E779FEC355</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<referredTableLongName>checkeo</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5BB5F18E-93C4-772F-CBC2-4ECC2EE719A7</referredTableID>
+<keyObject>03235018-4E10-6D60-CA18-7501BF5D9A4C</keyObject>
+<referredKeyID>03235018-4E10-6D60-CA18-7501BF5D9A4C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>reserva_id_reserva,inventario_id_inv</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

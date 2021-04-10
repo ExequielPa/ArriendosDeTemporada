@@ -54,7 +54,7 @@
 <dataTypePrecision>10</dataTypePrecision>
 <ownDataTypeParameters>,10,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_arriendo" id="944CFD11-95D3-9321-29DF-3CE7E584C51A">
+<Attribute name="id_reserva" id="944CFD11-95D3-9321-29DF-3CE7E584C51A">
 <createdBy>alanb</createdBy>
 <createdTime>2021-04-07 22:35:11 UTC</createdTime>
 <generatorID>14F16D7C-FC62-1366-F041-61E779FEC355</generatorID>
@@ -65,11 +65,12 @@
 <referedAttribute>C264FEC8-5309-3711-792E-DF287C130D52</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
 <dataTypeSize>10</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_inventario" id="3406474D-3DD0-25AF-7022-71159A6F8431">
+<Attribute name="id_inv" id="3406474D-3DD0-25AF-7022-71159A6F8431">
 <createdBy>alanb</createdBy>
 <createdTime>2021-04-07 22:35:21 UTC</createdTime>
 <generatorID>14F16D7C-FC62-1366-F041-61E779FEC355</generatorID>
@@ -80,9 +81,10 @@
 <referedAttribute>DACFA261-FD84-D362-8191-4D6FC0BC4A9B</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
 <dataTypeSize>20</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
