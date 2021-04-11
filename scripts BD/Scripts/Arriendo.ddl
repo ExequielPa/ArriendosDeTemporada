@@ -1,5 +1,5 @@
 -- Generado por Oracle SQL Developer Data Modeler 20.4.1.406.0906
---   en:        2021-04-10 14:55:40 CLT
+--   en:        2021-04-11 16:25:15 CLT
 --   sitio:      Oracle Database 11g
 --   tipo:      Oracle Database 11g
 
@@ -44,7 +44,8 @@ CREATE TABLE cliente (
     num_celular        NUMBER(9) NOT NULL,
     correo             VARCHAR2(50) NOT NULL,
     nacionalidad       VARCHAR2(20) NOT NULL,
-    cliente_frecuente  CHAR(1) NOT NULL
+    cliente_frecuente  CHAR(1) NOT NULL,
+    estado_cliente     VARCHAR2(50) NOT NULL
 );
 
 ALTER TABLE cliente ADD CONSTRAINT cliente_pk PRIMARY KEY ( id_cliente );

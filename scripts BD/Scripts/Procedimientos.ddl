@@ -31,22 +31,33 @@ INSERT INTO usuario (rut_usuario, contrasenia, rol, nombre_usuario, apellido_p, 
 VALUES (rut_usuario, contrasenia, rol, nombre_usuario, apellido_p, apellido_m, estado_usuario, email);
 END;
 
+
+CREATE OR REPLACE PROCEDURE delete_usuario(rut_usuario in varchar2) IS
+BEGIN
+UPDATE usuario SET estado_usuario='Inhabilitado'
+WHERE rut_usuario = rut_usuario;
+END;
+
+
+/* DELETE USUARIO COMENTADO
 CREATE OR REPLACE PROCEDURE delete_usuario(rut_usuarioD in NUMBER) IS
 BEGIN
 DELETE FROM usuario where rut_usuario=rut_usuarioD;
-END;
+END; */ 
 
-CREATE OR REPLACE PROCEDURE update_usuario(rut_usuarioU in VARCHAR2, contraseniaU in VARCHAR2, rolU in NUMBER, nombre_usuarioU in VARCHAR2, apellido_pU in VARCHAR2, apellido_mU in VARCHAR2, estado_usuarioU in VARCHAR2, emailU in VARCHAR2) IS
+CREATE OR REPLACE PROCEDURE update_usuario(rut_usuarioU in VARCHAR2, rolU in VARCHAR2, nombre_usuarioU in VARCHAR2, apellido_pU in VARCHAR2, apellido_mU in VARCHAR2, estado_usuarioU in VARCHAR2, emailU in VARCHAR2) IS
 BEGIN
 UPDATE usuario
 SET
-contrasenia = contraseniaU, rol = rolU, nombre_usuario = nombre_usuarioU, apellido_p = apellido_pU, apellido_m = apellido_mU, estado_usuario = estado_usuarioU, email = emailU
+rol = rolU, nombre_usuario = nombre_usuarioU, apellido_p = apellido_pU, apellido_m = apellido_mU, estado_usuario = estado_usuarioU, email = emailU
 WHERE rut_usuario = rut_usuarioU;
 END;
 
+commit;
+
 /* CRUD DEPTO */
 
-CREATE OR REPLACE PROCEDURE insert_dpto (num_depto in NUMBER, direccion in VARCHAR2, descripcion in VARCHAR2, region in VARCHAR2, estado in NUMBER) IS
+CREATE OR REPLACE PROCEDURE insert_dpto (num_depto in NUMBER, direccion in VARCHAR2, descripcion in VARCHAR2, region in VARCHAR2, estado in VARCHAR2) IS
 BEGIN
 INSERT INTO dpto (id_dpto, num_depto, direccion, descripcion, region, estado)
 VALUES (id_dpto.nextval, num_depto, direccion, descripcion, region, estado);
@@ -57,7 +68,7 @@ BEGIN
 DELETE FROM dpto WHERE id_dpto = id_dptoD;
 END;
 
-CREATE OR REPLACE PROCEDURE update_dpto (id_dptoU in VARCHAR2, num_deptoU in NUMBER, direccionU in VARCHAR2, descripcionU in VARCHAR2, regionU in VARCHAR2, estadoU in NUMBER) IS
+CREATE OR REPLACE PROCEDURE update_dpto (id_dptoU in NUMBER, num_deptoU in NUMBER, direccionU in VARCHAR2, descripcionU in VARCHAR2, regionU in VARCHAR2, estadoU in VARCHAR2) IS
 BEGIN
 UPDATE dpto
 SET
@@ -76,6 +87,12 @@ END;
 CREATE OR REPLACE PROCEDURE delete_cliente (id_clienteD in NUMBER) IS
 BEGIN
 DELETE FROM cliente WHERE id_cliente = id_clienteD;
+END;
+
+CREATE OR REPLACE PROCEDURE desabilitar_cliente(id_cliente in NUMBER) IS
+BEGIN
+UPDATE cliente SET estado_cliente='Inhabilitado'
+WHERE id_cliente = id_cliente;
 END;
 
 CREATE OR REPLACE PROCEDURE update_cliente (id_clienteU in NUMBER, rut_clienteU in VARCHAR2, pasaporteU in VARCHAR2, passwrdU in VARCHAR2, nombreU in VARCHAR2, apellido_pU in VARCHAR2, apellido_mU in VARCHAR2, num_celularU in NUMBER, correoU in VARCHAR2, nacionalidadU in VARCHAR2, cliente_frecuenteU in CHAR) IS
