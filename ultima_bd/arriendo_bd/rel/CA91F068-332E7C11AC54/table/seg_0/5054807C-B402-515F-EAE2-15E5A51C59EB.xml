@@ -1,0 +1,127 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5054807C-B402-515F-EAE2-15E5A51C59EB" name="acompanante">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-11 20:21:57 UTC</createdTime>
+<generatorID>4C59B476-7E56-31F1-93FD-3865FCA08331</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_acompanante" id="72F61291-8081-B015-6F69-2B8AB0FDE96D">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-11 20:21:57 UTC</createdTime>
+<generatorID>849A5405-E3BD-1C6A-01C6-0B2F32668BFA</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rut_acompanante" id="770ABAB4-EE52-1150-37A1-E3B2B39AE59C">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-11 20:21:57 UTC</createdTime>
+<generatorID>C58B0EC1-8680-9ACC-89EB-251A086B1239</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pasaporte" id="B0D955EB-4A6D-1A7F-3453-EF0298D16B59">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-11 20:21:57 UTC</createdTime>
+<generatorID>E68BE362-F17F-3C37-215B-97341F21088C</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="084A910C-4E9C-6B9F-ACD8-D9D6BD36EED2">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-11 20:21:57 UTC</createdTime>
+<generatorID>B2B69F94-643F-5764-5A2C-51CCD25DDD79</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="apellido_p" id="F6C77B0B-FCC7-8693-1EA5-677CCBD4E546">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-11 20:21:57 UTC</createdTime>
+<generatorID>A5F31F41-45DE-D64D-D235-764C1FDC65CE</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="apellido_m" id="C0921A3F-4798-1A2D-D458-A94CA36DFCAB">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-11 20:21:57 UTC</createdTime>
+<generatorID>B8C533D1-7C3F-4F6C-CC08-A46A2C96A77A</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cliente_id_cliente" id="62095D03-E69C-FA41-4130-AA562405D22F">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-11 20:21:57 UTC</createdTime>
+<generatorID>7616716A-9591-F642-9156-521995DCE0A0</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AA20FA65-1A68-BB7F-9E30-5D94C3E0863B" referredColumn="D74E6834-063E-4284-D8A0-34CA7BB1B784"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CBDA6EE1-C6EC-01BD-859B-880F43E10A7F" name="acompanante_PK">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-11 20:21:57 UTC</createdTime>
+<generatorID>18215ED2-5E4B-3131-3142-C2390C7D1A06</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="72F61291-8081-B015-6F69-2B8AB0FDE96D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A54A1BD3-8B8F-E5C1-ABFF-2124E0EBCD44" name="acompanante_cliente_FK">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-11 20:21:57 UTC</createdTime>
+<generatorID>5A0AAC89-6E9D-9ACB-D127-6351CDD09B88</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="62095D03-E69C-FA41-4130-AA562405D22F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

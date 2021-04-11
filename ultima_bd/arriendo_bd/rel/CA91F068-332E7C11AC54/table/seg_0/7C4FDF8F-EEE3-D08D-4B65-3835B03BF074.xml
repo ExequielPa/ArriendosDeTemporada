@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7C4FDF8F-EEE3-D08D-4B65-3835B03BF074" name="pago">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-11 20:21:57 UTC</createdTime>
+<generatorID>AFA651F3-F99D-569E-6676-348EDD0DE19F</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_pago" id="47A50050-89B5-5EAC-925D-C24A589656FC">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-11 20:21:57 UTC</createdTime>
+<generatorID>5162A598-0E5F-63B5-9D7A-DBEE1803E2DF</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="monto" id="F5270A3B-5CE1-F195-9158-36183A565B89">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-11 20:21:57 UTC</createdTime>
+<generatorID>72731E87-C093-0ADF-7C0C-A61518B6DA33</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_pago" id="808B7260-8F2F-CF62-1A07-2EB217DBCA05">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-11 20:21:57 UTC</createdTime>
+<generatorID>915E338F-2B25-F9A4-2F2D-49051A6A536D</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="reserva_id_reserva" id="A017C884-F615-B929-E65A-9E5164B80EC6">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-11 20:21:57 UTC</createdTime>
+<generatorID>DCA8008A-5F9B-E42B-C40B-EE815E8F6FB5</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A5C5DAE0-7BA0-6087-1356-6F9B901CD70B" referredColumn="9FC3DBFF-57D5-365E-6827-62BF9CD1D360"/>
+</associations>
+</Column>
+<Column name="metodo_pago" id="81DEE0C8-67BB-31F0-8621-246F0B58BEBE">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-11 20:21:57 UTC</createdTime>
+<generatorID>C507C98D-DB62-478C-06D9-70EBEADCDCF2</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usuario_rut_usuario" id="4B2A2C45-611C-D090-FC6C-0DF2E9AB4208">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-11 20:21:57 UTC</createdTime>
+<generatorID>0C8E6CEE-4D79-5F3A-AD46-CE61B373695F</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="94DDB0AD-F3D5-57C9-6B79-D01D96E6EF3D" referredColumn="CD97BB47-7EA3-A9E6-7AFB-9D673CC9621F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1F0F62A2-8CB3-6FA8-82EF-438A7293B4F3" name="pago_PK">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-11 20:21:57 UTC</createdTime>
+<generatorID>B7A76611-A318-6C90-807F-DC8176739576</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="47A50050-89B5-5EAC-925D-C24A589656FC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4B7F2379-75B5-B5F2-6FC0-C02AECD49627" name="pago_reserva_FK">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-11 20:21:57 UTC</createdTime>
+<generatorID>F51114C2-9821-2B00-1ED8-076DA1FFD49E</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A017C884-F615-B929-E65A-9E5164B80EC6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="12CB2034-C0A7-1D5B-F74F-53A3F66B70A7" name="pago_usuario_FK">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-11 20:21:57 UTC</createdTime>
+<generatorID>D2C1820D-4587-9E4F-B2EF-9EEEF623ECC0</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B2A2C45-611C-D090-FC6C-0DF2E9AB4208"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

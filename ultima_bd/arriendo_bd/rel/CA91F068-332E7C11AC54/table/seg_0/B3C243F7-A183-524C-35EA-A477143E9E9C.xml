@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B3C243F7-A183-524C-35EA-A477143E9E9C" name="multa">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-11 20:21:57 UTC</createdTime>
+<generatorID>B64D9E9E-D8E0-8C8E-F8EC-4BBE8CB4D50E</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_multa" id="FC389E39-8B25-8630-6BB2-3906AB42F844">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-11 20:21:57 UTC</createdTime>
+<generatorID>1E076564-5E89-5B24-7750-7E97D66119FC</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="9266C39E-3C75-2223-290F-173E4913B0EF">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-11 20:21:57 UTC</createdTime>
+<generatorID>613327A6-ABBA-A0EE-8FE9-97C8176A95B1</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="monto" id="B151E2EF-CCC2-7CC0-272E-27DA9DDD2F11">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-11 20:21:57 UTC</createdTime>
+<generatorID>C8645621-F5C9-51E1-A182-428832CE9E51</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="checkeo_reserva_id_reserva" id="C8BB98FE-8FF0-16C5-7398-B623ECB540ED">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-11 20:21:57 UTC</createdTime>
+<generatorID>944CFD11-95D3-9321-29DF-3CE7E584C51A</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="621499C2-C55B-4D27-9AE9-1E72DC15FE02" referredColumn="30C50866-0E8E-C389-6D3E-6840124794E0"/>
+</associations>
+</Column>
+<Column name="checkeo_inventario_id_inv" id="7DE51340-8F5F-42B5-345F-82B622EE652F">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-11 20:21:57 UTC</createdTime>
+<generatorID>3406474D-3DD0-25AF-7022-71159A6F8431</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="621499C2-C55B-4D27-9AE9-1E72DC15FE02" referredColumn="2894457E-0A6F-C842-2F6A-EB4B3BDF9A38"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="786374DD-49EA-9E61-3D11-908BD9492525" name="multa_PK">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-11 20:21:57 UTC</createdTime>
+<generatorID>CA2B45D7-BA10-12B2-DD82-B0CD5CB45B09</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FC389E39-8B25-8630-6BB2-3906AB42F844"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="26292DAD-38F6-BDE3-384E-EE62837DDC1C" name="multa_checkeo_FK">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-11 20:21:57 UTC</createdTime>
+<generatorID>14F16D7C-FC62-1366-F041-61E779FEC355</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C8BB98FE-8FF0-16C5-7398-B623ECB540ED"/>
+<colUsage columnID="7DE51340-8F5F-42B5-345F-82B622EE652F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="147448E2-BC3E-7066-D8F2-370D1D5FF27D" containerWithKeyObject="80627FBC-26FA-A4F8-5557-0343BA0A5CA8" localFKIndex="3904DA4E-8BF5-3082-0BFC-3C593A792278" name="inventario_dpto_FK">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-11 20:21:57 UTC</createdTime>
+<generatorID>910F3B3B-3872-46A2-2364-2B49FD1D5F1A</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<referredTableLongName>dpto</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C73384F3-4372-BDEE-F0B6-0C801CCF0618</referredTableID>
+<keyObject>0EB32D95-F372-A595-2723-E785AC3AA0A5</keyObject>
+<referredKeyID>0EB32D95-F372-A595-2723-E785AC3AA0A5</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_dpto</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

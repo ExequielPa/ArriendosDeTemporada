@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4C8AB2F5-0D4D-FFBC-CFFF-C5D079AF4A9F" name="det_serv_extra">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-11 20:21:57 UTC</createdTime>
+<generatorID>6E9038E7-56B5-7C9C-55FE-CF18CF52ECDB</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="descripcion" id="AF721A07-65BB-F873-23EF-BA9262CEB6BC">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-11 20:21:57 UTC</createdTime>
+<generatorID>BE5F58EA-F80F-1667-A915-5FA88B11E1D8</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cant_serv" id="92042786-F626-84ED-2608-EB03E9DCE775">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-11 20:21:57 UTC</createdTime>
+<generatorID>2DA707EC-3DBD-CAB6-A169-7EBE6F7F4E19</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tour_id_tour" id="C02AEC4C-3B41-8978-97BC-EFB07BE24478">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-11 20:21:57 UTC</createdTime>
+<generatorID>F3FC0ABB-6EDE-A520-A258-B1767A137637</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8A883E08-C9D8-59BC-9850-69B2A13315C8" referredColumn="ADFD41BB-55F5-B2E8-0027-3A27F214A650"/>
+</associations>
+</Column>
+<Column name="transporte_id_transporte" id="1F230DE4-A177-CEA9-D8AA-14A47719553A">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-11 20:21:57 UTC</createdTime>
+<generatorID>BCC5717E-2884-F511-5E7A-8D1E4098386B</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8EBE2E82-6651-8A27-F204-AAA000138F83" referredColumn="BE0BB7F6-597A-02AA-B30F-850A2F923186"/>
+</associations>
+</Column>
+<Column name="reserva_id_reserva" id="0D42A47D-80D5-B157-B112-AAB53E6861A2">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-11 20:21:57 UTC</createdTime>
+<generatorID>3662A1D3-AFFF-90CB-68F0-35BC61D78B8D</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4DD3BFF1-6E3D-F36D-C700-9659C124025C" referredColumn="9FC3DBFF-57D5-365E-6827-62BF9CD1D360"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DA969C74-88B6-74E8-C256-0D84A6EE8A27" name="det_serv_extra_PK">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-11 20:21:57 UTC</createdTime>
+<generatorID>17B69A47-1A04-832A-42DB-76738529592C</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C02AEC4C-3B41-8978-97BC-EFB07BE24478"/>
+<colUsage columnID="1F230DE4-A177-CEA9-D8AA-14A47719553A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5276257D-7474-B872-83CE-203CF60F02F2" name="det_serv_extra_reserva_FK">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-11 20:21:57 UTC</createdTime>
+<generatorID>150CF6A6-EECF-4545-24D7-269CF8241C3E</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0D42A47D-80D5-B157-B112-AAB53E6861A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9D0247B4-DDBE-F10F-EFCF-CA296302988B" name="det_serv_extra_tour_FK">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-11 20:21:57 UTC</createdTime>
+<generatorID>1F925A1A-F208-FA04-4973-4162317B3DD0</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C02AEC4C-3B41-8978-97BC-EFB07BE24478"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="008CD7F2-FFEA-78F3-317D-CC3C9731DE38" name="det_serv_extra_transporte_FK">
+<createdBy>alanb</createdBy>
+<createdTime>2021-04-11 20:21:57 UTC</createdTime>
+<generatorID>75F9EB3B-3B8A-8616-6DB8-2720DEAA7F83</generatorID>
+<ownerDesignName>arriendo_bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1F230DE4-A177-CEA9-D8AA-14A47719553A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
