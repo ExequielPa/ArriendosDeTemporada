@@ -23,6 +23,15 @@ CREATE SEQUENCE id_inv
     NOCYCLE
     CACHE 20;    
 
+CREATE SEQUENCE id_tour
+    INCREMENT BY 1
+    START WITH 1
+    MINVALUE 1
+    MAXVALUE 9999
+    NOCYCLE
+    CACHE 20;        
+    
+
 
 /* CRUD USUARIO */
 CREATE OR REPLACE PROCEDURE insert_usuario (rut_usuario in VARCHAR2, contrasenia in VARCHAR2, rol in VARCHAR2, nombre_usuario in VARCHAR2, apellido_p in VARCHAR2, apellido_m in VARCHAR2, estado_usuario in VARCHAR2, email in VARCHAR2) IS
@@ -39,12 +48,6 @@ WHERE rut_usuario = rut_usuario;
 END;
 
 
-/* DELETE USUARIO COMENTADO
-CREATE OR REPLACE PROCEDURE delete_usuario(rut_usuarioD in NUMBER) IS
-BEGIN
-DELETE FROM usuario where rut_usuario=rut_usuarioD;
-END; */ 
-
 CREATE OR REPLACE PROCEDURE update_usuario(rut_usuarioU in VARCHAR2, rolU in VARCHAR2, nombre_usuarioU in VARCHAR2, apellido_pU in VARCHAR2, apellido_mU in VARCHAR2, estado_usuarioU in VARCHAR2, emailU in VARCHAR2) IS
 BEGIN
 UPDATE usuario
@@ -52,8 +55,6 @@ SET
 rol = rolU, nombre_usuario = nombre_usuarioU, apellido_p = apellido_pU, apellido_m = apellido_mU, estado_usuario = estado_usuarioU, email = emailU
 WHERE rut_usuario = rut_usuarioU;
 END;
-
-commit;
 
 /* CRUD DEPTO */
 
@@ -78,11 +79,12 @@ END;
 
 /* CRUD CLIENTE */ 
 
-CREATE OR REPLACE PROCEDURE insert_cliente (rut_cliente in VARCHAR2, pasaporte in VARCHAR2, passwrd in VARCHAR2, nombre in VARCHAR2, apellido_p in VARCHAR2, apellido_m in VARCHAR2, num_celular in NUMBER, correo in VARCHAR2, nacionalidad in VARCHAR2, cliente_frecuente in CHAR) IS
+CREATE OR REPLACE PROCEDURE insert_cliente (rut_cliente in VARCHAR2, pasaporte in VARCHAR2, passwrd in VARCHAR2, nombre in VARCHAR2, apellido_p in VARCHAR2, apellido_m in VARCHAR2, num_celular in NUMBER, correo in VARCHAR2, nacionalidad in VARCHAR2, cliente_frecuente in CHAR, estado_cliente in VARCHAR2 ) IS
 BEGIN
-INSERT INTO cliente (id_cliente, rut_cliente, pasaporte, passwrd, nombre, apellido_p, apellido_m, num_celular, correo, nacionalidad, cliente_frecuente)
-VALUES (id_cliente.nextval, rut_cliente, pasaporte, passwrd, nombre, apellido_p, apellido_m, num_celular, correo, nacionalidad, cliente_frecuente);
+INSERT INTO cliente (id_cliente, rut_cliente, pasaporte, passwrd, nombre, apellido_p, apellido_m, num_celular, correo, nacionalidad, cliente_frecuente, estado_cliente)
+VALUES (id_cliente.nextval, rut_cliente, pasaporte, passwrd, nombre, apellido_p, apellido_m, num_celular, correo, nacionalidad, cliente_frecuente, estado_cliente);
 END;
+
 
 CREATE OR REPLACE PROCEDURE delete_cliente (id_clienteD in NUMBER) IS
 BEGIN
@@ -95,11 +97,11 @@ UPDATE cliente SET estado_cliente='Inhabilitado'
 WHERE id_cliente = id_cliente;
 END;
 
-CREATE OR REPLACE PROCEDURE update_cliente (id_clienteU in NUMBER, rut_clienteU in VARCHAR2, pasaporteU in VARCHAR2, passwrdU in VARCHAR2, nombreU in VARCHAR2, apellido_pU in VARCHAR2, apellido_mU in VARCHAR2, num_celularU in NUMBER, correoU in VARCHAR2, nacionalidadU in VARCHAR2, cliente_frecuenteU in CHAR) IS
+CREATE OR REPLACE PROCEDURE update_cliente (id_clienteU in NUMBER, rut_clienteU in VARCHAR2, pasaporteU in VARCHAR2, nombreU in VARCHAR2, apellido_pU in VARCHAR2, apellido_mU in VARCHAR2, num_celularU in NUMBER, correoU in VARCHAR2, nacionalidadU in VARCHAR2, cliente_frecuenteU in CHAR,estado_clienteU in VARCHAR2) IS
 BEGIN
 UPDATE cliente
 SET
-rut_cliente = rut_clienteU, pasaporte = pasaporteU, passwrd = passwrdU, nombre = nombreU, apellido_p = apellido_pU, apellido_m = apellido_mU, num_celular = num_celularU, correo = correoU, nacionalidad = nacionalidadU, cliente_frecuente = cliente_frecuenteU
+rut_cliente = rut_clienteU, pasaporte = pasaporteU, nombre = nombreU, apellido_p = apellido_pU, apellido_m = apellido_mU, num_celular = num_celularU, correo = correoU, nacionalidad = nacionalidadU, cliente_frecuente = cliente_frecuenteU,estado_cliente = estado_clienteU
 WHERE id_cliente = id_clienteU;
 END;
 
@@ -123,4 +125,25 @@ UPDATE inventario
 SET
 nombre_arti = nombre_artiU, tipo_arti = tipo_artiU, valor_arti = valor_artiU, dpto_id_dpto = dpto_id_dptoU
 WHERE id_inv = id_invU;
+END;
+
+/* CRUD TOUR */
+
+CREATE OR REPLACE PROCEDURE insert_tour (recorrido in VARCHAR2, punto_reunion in VARCHAR2, horario_salida in DATE, horario_llegada in DATE, valor in NUMBER) IS
+BEGIN
+INSERT INTO tour (id_tour, recorrido, punto_reunion, horario_salida, horario_llegada, valor)
+VALUES (id_tour.nextval, recorrido, punto_reunion, horario_salida, horario_llegada, valor);
+END;
+
+CREATE OR REPLACE PROCEDURE delete_tour (id_tourD in NUMBER) IS
+BEGIN
+DELETE FROM tour WHERE id_tour = id_tourD;
+END;
+
+CREATE OR REPLACE PROCEDURE update_tour (id_tourU in NUMBER, recorridoU in VARCHAR2, punto_reunionU in VARCHAR2, horario_salidaU in DATE, horario_llegadaU in DATE, valorU in NUMBER) IS
+BEGIN
+UPDATE tour
+SET
+recorrido = recorridoU, punto_reunion = punto_reunionU, horario_salida = horario_salidaU, horario_llegada = horario_llegadaU, valor = valorU
+WHERE id_tour = id_tourU;
 END;

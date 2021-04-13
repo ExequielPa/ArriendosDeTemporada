@@ -1,5 +1,5 @@
 -- Generado por Oracle SQL Developer Data Modeler 20.4.1.406.0906
---   en:        2021-04-11 16:25:15 CLT
+--   en:        2021-04-12 22:21:13 CLT
 --   sitio:      Oracle Database 11g
 --   tipo:      Oracle Database 11g
 
@@ -54,7 +54,7 @@ CREATE TABLE det_serv_extra (
     descripcion               VARCHAR2(50) NOT NULL,
     cant_serv                 VARCHAR2(50) NOT NULL,
     tour_id_tour              NUMBER(10) NOT NULL,
-    transporte_id_transporte  NUMBER NOT NULL,
+    transporte_id_transporte  NUMBER(10) NOT NULL,
     reserva_id_reserva        NUMBER(10) NOT NULL
 );
 
@@ -66,8 +66,8 @@ CREATE TABLE dpto (
     num_depto    NUMBER(6) NOT NULL,
     direccion    VARCHAR2(200) NOT NULL,
     descripcion  VARCHAR2(1000) NOT NULL,
-    region       VARCHAR2(20) NOT NULL,
-    estado       NUMBER(3) NOT NULL
+    region       VARCHAR2(200) NOT NULL,
+    estado       VARCHAR2(100) NOT NULL
 );
 
 ALTER TABLE dpto ADD CONSTRAINT dpto_pk PRIMARY KEY ( id_dpto );
@@ -85,7 +85,7 @@ ALTER TABLE inventario ADD CONSTRAINT inventario_pk PRIMARY KEY ( id_inv );
 CREATE TABLE mantencion (
     id_mantecion  NUMBER(10) NOT NULL,
     descripcion   VARCHAR2(50) NOT NULL,
-    valor         NUMBER NOT NULL,
+    valor         NUMBER(10) NOT NULL,
     fecha_ini     DATE NOT NULL,
     fecha_term    DATE NOT NULL,
     dpto_id_dpto  NUMBER(10) NOT NULL
@@ -95,7 +95,7 @@ ALTER TABLE mantencion ADD CONSTRAINT mantencion_pk PRIMARY KEY ( id_mantecion )
 
 CREATE TABLE multa (
     id_multa                    VARCHAR2(10) NOT NULL,
-    descripcion                 VARCHAR2(30) NOT NULL,
+    descripcion                 VARCHAR2(250) NOT NULL,
     monto                       NUMBER(10) NOT NULL,
     checkeo_reserva_id_reserva  NUMBER(10) NOT NULL,
     checkeo_inventario_id_inv   NUMBER(10) NOT NULL
@@ -104,7 +104,7 @@ CREATE TABLE multa (
 ALTER TABLE multa ADD CONSTRAINT multa_pk PRIMARY KEY ( id_multa );
 
 CREATE TABLE pago (
-    id_pago              VARCHAR2(10) NOT NULL,
+    id_pago              NUMBER(10) NOT NULL,
     monto                NUMBER(10) NOT NULL,
     fecha_pago           DATE NOT NULL,
     reserva_id_reserva   NUMBER(10),
@@ -128,7 +128,6 @@ ALTER TABLE reserva ADD CONSTRAINT reserva_pk PRIMARY KEY ( id_reserva );
 CREATE TABLE tour (
     id_tour          NUMBER(10) NOT NULL,
     recorrido        VARCHAR2(50) NOT NULL,
-    duracion         NUMBER(10) NOT NULL,
     punto_reunion    VARCHAR2(20) NOT NULL,
     horario_salida   DATE NOT NULL,
     horario_llegada  DATE NOT NULL,
@@ -138,7 +137,7 @@ CREATE TABLE tour (
 ALTER TABLE tour ADD CONSTRAINT tour_pk PRIMARY KEY ( id_tour );
 
 CREATE TABLE transporte (
-    id_transporte   NUMBER NOT NULL,
+    id_transporte   NUMBER(10) NOT NULL,
     chofer          VARCHAR2(50) NOT NULL,
     vehiculo        VARCHAR2(25) NOT NULL,
     punto_reunion   VARCHAR2(50) NOT NULL,

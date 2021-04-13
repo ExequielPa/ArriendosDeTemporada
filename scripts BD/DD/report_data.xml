@@ -4,8 +4,8 @@
    <osdmAllTables:CompanyName/>
    <osdmAllTables:UsePageBreaks>true</osdmAllTables:UsePageBreaks>
    <osdmAllTables:DesignName>arriendo_bd</osdmAllTables:DesignName>
-   <osdmAllTables:VersionDate>11.04.2021 04:23:58</osdmAllTables:VersionDate>
-   <osdmAllTables:ModelName>Relational_1</osdmAllTables:ModelName>
+   <osdmAllTables:VersionDate>12.04.2021 10:20:42</osdmAllTables:VersionDate>
+   <osdmAllTables:ModelName>BD_Arriendo</osdmAllTables:ModelName>
    <osdmAllTables:SubViewsCollection/>
    <osdmAllTables:TablesCollection>
       <osdmAllTables:TableDetails>
@@ -28,8 +28,8 @@
          </osdmAllTables:QuantitativeInfoCollection>
          <osdmAllTables:DiagramsCollection>
             <osdmAllTables:Diagram>
-               <osdmAllTables:Name>/Relational_1</osdmAllTables:Name>
-               <osdmAllTables:Link>Relational_1</osdmAllTables:Link>
+               <osdmAllTables:Name>/BD_Arriendo</osdmAllTables:Name>
+               <osdmAllTables:Link>BD_Arriendo</osdmAllTables:Link>
                <osdmAllTables:Suffix>__dg_rm_1</osdmAllTables:Suffix>
             </osdmAllTables:Diagram>
          </osdmAllTables:DiagramsCollection>
@@ -170,8 +170,8 @@
          </osdmAllTables:QuantitativeInfoCollection>
          <osdmAllTables:DiagramsCollection>
             <osdmAllTables:Diagram>
-               <osdmAllTables:Name>/Relational_1</osdmAllTables:Name>
-               <osdmAllTables:Link>Relational_1</osdmAllTables:Link>
+               <osdmAllTables:Name>/BD_Arriendo</osdmAllTables:Name>
+               <osdmAllTables:Link>BD_Arriendo</osdmAllTables:Link>
                <osdmAllTables:Suffix>__dg_rm_1</osdmAllTables:Suffix>
             </osdmAllTables:Diagram>
          </osdmAllTables:DiagramsCollection>
@@ -277,16 +277,6 @@
          </osdmAllTables:IndexesCollection>
          <osdmAllTables:FKRTCollection>
             <osdmAllTables:FKRTDetails>
-               <osdmAllTables:FKName>checkeo_reserva_FK</osdmAllTables:FKName>
-               <osdmAllTables:FKReferringTo>reserva</osdmAllTables:FKReferringTo>
-               <osdmAllTables:FKMandatory>Y</osdmAllTables:FKMandatory>
-               <osdmAllTables:FKTransferable>Y</osdmAllTables:FKTransferable>
-               <osdmAllTables:FKInArc/>
-               <osdmAllTables:FKReferringColumnName>reserva_id_reserva</osdmAllTables:FKReferringColumnName>
-               <osdmAllTables:FKReferredColumnName>id_reserva</osdmAllTables:FKReferredColumnName>
-               <osdmAllTables:FKDeleteRule/>
-            </osdmAllTables:FKRTDetails>
-            <osdmAllTables:FKRTDetails>
                <osdmAllTables:FKName>checkeo_inventario_FK</osdmAllTables:FKName>
                <osdmAllTables:FKReferringTo>inventario</osdmAllTables:FKReferringTo>
                <osdmAllTables:FKMandatory>Y</osdmAllTables:FKMandatory>
@@ -294,6 +284,16 @@
                <osdmAllTables:FKInArc/>
                <osdmAllTables:FKReferringColumnName>inventario_id_inv</osdmAllTables:FKReferringColumnName>
                <osdmAllTables:FKReferredColumnName>id_inv</osdmAllTables:FKReferredColumnName>
+               <osdmAllTables:FKDeleteRule/>
+            </osdmAllTables:FKRTDetails>
+            <osdmAllTables:FKRTDetails>
+               <osdmAllTables:FKName>checkeo_reserva_FK</osdmAllTables:FKName>
+               <osdmAllTables:FKReferringTo>reserva</osdmAllTables:FKReferringTo>
+               <osdmAllTables:FKMandatory>Y</osdmAllTables:FKMandatory>
+               <osdmAllTables:FKTransferable>Y</osdmAllTables:FKTransferable>
+               <osdmAllTables:FKInArc/>
+               <osdmAllTables:FKReferringColumnName>reserva_id_reserva</osdmAllTables:FKReferringColumnName>
+               <osdmAllTables:FKReferredColumnName>id_reserva</osdmAllTables:FKReferredColumnName>
                <osdmAllTables:FKDeleteRule/>
             </osdmAllTables:FKRTDetails>
          </osdmAllTables:FKRTCollection>
@@ -316,7 +316,7 @@ checkeo_inventario_id_inv</osdmAllTables:FKReferredColumnName>
          <osdmAllTables:TableName>cliente</osdmAllTables:TableName>
          <osdmAllTables:EncodedTableName>12AE53BC-6F8B7D14B9A4</osdmAllTables:EncodedTableName>
          <osdmAllTables:DiagramSuffix>__dg_rm_1</osdmAllTables:DiagramSuffix>
-         <osdmAllTables:FunctionalName>cliente </osdmAllTables:FunctionalName>
+         <osdmAllTables:FunctionalName>cliente</osdmAllTables:FunctionalName>
          <osdmAllTables:Abbreviation/>
          <osdmAllTables:ClassificationTypeName/>
          <osdmAllTables:ObjectTypeName/>
@@ -332,8 +332,8 @@ checkeo_inventario_id_inv</osdmAllTables:FKReferredColumnName>
          </osdmAllTables:QuantitativeInfoCollection>
          <osdmAllTables:DiagramsCollection>
             <osdmAllTables:Diagram>
-               <osdmAllTables:Name>/Relational_1</osdmAllTables:Name>
-               <osdmAllTables:Link>Relational_1</osdmAllTables:Link>
+               <osdmAllTables:Name>/BD_Arriendo</osdmAllTables:Name>
+               <osdmAllTables:Link>BD_Arriendo</osdmAllTables:Link>
                <osdmAllTables:Suffix>__dg_rm_1</osdmAllTables:Suffix>
             </osdmAllTables:Diagram>
          </osdmAllTables:DiagramsCollection>
@@ -533,7 +533,7 @@ checkeo_inventario_id_inv</osdmAllTables:FKReferredColumnName>
          <osdmAllTables:TableName>det_serv_extra</osdmAllTables:TableName>
          <osdmAllTables:EncodedTableName>4C8AB2F5-C5D079AF4A9F</osdmAllTables:EncodedTableName>
          <osdmAllTables:DiagramSuffix>__dg_rm_1</osdmAllTables:DiagramSuffix>
-         <osdmAllTables:FunctionalName>det_serv_extra</osdmAllTables:FunctionalName>
+         <osdmAllTables:FunctionalName>det serv extra</osdmAllTables:FunctionalName>
          <osdmAllTables:Abbreviation/>
          <osdmAllTables:ClassificationTypeName/>
          <osdmAllTables:ObjectTypeName/>
@@ -549,8 +549,8 @@ checkeo_inventario_id_inv</osdmAllTables:FKReferredColumnName>
          </osdmAllTables:QuantitativeInfoCollection>
          <osdmAllTables:DiagramsCollection>
             <osdmAllTables:Diagram>
-               <osdmAllTables:Name>/Relational_1</osdmAllTables:Name>
-               <osdmAllTables:Link>Relational_1</osdmAllTables:Link>
+               <osdmAllTables:Name>/BD_Arriendo</osdmAllTables:Name>
+               <osdmAllTables:Link>BD_Arriendo</osdmAllTables:Link>
                <osdmAllTables:Suffix>__dg_rm_1</osdmAllTables:Suffix>
             </osdmAllTables:Diagram>
          </osdmAllTables:DiagramsCollection>
@@ -600,7 +600,7 @@ checkeo_inventario_id_inv</osdmAllTables:FKReferredColumnName>
                <osdmAllTables:PK>P</osdmAllTables:PK>
                <osdmAllTables:FK>F</osdmAllTables:FK>
                <osdmAllTables:M>Y</osdmAllTables:M>
-               <osdmAllTables:DataType>NUMERIC</osdmAllTables:DataType>
+               <osdmAllTables:DataType>NUMERIC (10)</osdmAllTables:DataType>
                <osdmAllTables:DataTypeKind>LT</osdmAllTables:DataTypeKind>
                <osdmAllTables:DomainName/>
                <osdmAllTables:Formula/>
@@ -694,8 +694,8 @@ checkeo_inventario_id_inv</osdmAllTables:FKReferredColumnName>
          </osdmAllTables:QuantitativeInfoCollection>
          <osdmAllTables:DiagramsCollection>
             <osdmAllTables:Diagram>
-               <osdmAllTables:Name>/Relational_1</osdmAllTables:Name>
-               <osdmAllTables:Link>Relational_1</osdmAllTables:Link>
+               <osdmAllTables:Name>/BD_Arriendo</osdmAllTables:Name>
+               <osdmAllTables:Link>BD_Arriendo</osdmAllTables:Link>
                <osdmAllTables:Suffix>__dg_rm_1</osdmAllTables:Suffix>
             </osdmAllTables:Diagram>
          </osdmAllTables:DiagramsCollection>
@@ -758,7 +758,7 @@ checkeo_inventario_id_inv</osdmAllTables:FKReferredColumnName>
                <osdmAllTables:PK/>
                <osdmAllTables:FK/>
                <osdmAllTables:M>Y</osdmAllTables:M>
-               <osdmAllTables:DataType>VARCHAR (20) </osdmAllTables:DataType>
+               <osdmAllTables:DataType>VARCHAR (200) </osdmAllTables:DataType>
                <osdmAllTables:DataTypeKind>LT</osdmAllTables:DataTypeKind>
                <osdmAllTables:DomainName/>
                <osdmAllTables:Formula/>
@@ -771,7 +771,7 @@ checkeo_inventario_id_inv</osdmAllTables:FKReferredColumnName>
                <osdmAllTables:PK/>
                <osdmAllTables:FK/>
                <osdmAllTables:M>Y</osdmAllTables:M>
-               <osdmAllTables:DataType>NUMERIC (3)</osdmAllTables:DataType>
+               <osdmAllTables:DataType>VARCHAR (100) </osdmAllTables:DataType>
                <osdmAllTables:DataTypeKind>LT</osdmAllTables:DataTypeKind>
                <osdmAllTables:DomainName/>
                <osdmAllTables:Formula/>
@@ -843,8 +843,8 @@ checkeo_inventario_id_inv</osdmAllTables:FKReferredColumnName>
          </osdmAllTables:QuantitativeInfoCollection>
          <osdmAllTables:DiagramsCollection>
             <osdmAllTables:Diagram>
-               <osdmAllTables:Name>/Relational_1</osdmAllTables:Name>
-               <osdmAllTables:Link>Relational_1</osdmAllTables:Link>
+               <osdmAllTables:Name>/BD_Arriendo</osdmAllTables:Name>
+               <osdmAllTables:Link>BD_Arriendo</osdmAllTables:Link>
                <osdmAllTables:Suffix>__dg_rm_1</osdmAllTables:Suffix>
             </osdmAllTables:Diagram>
          </osdmAllTables:DiagramsCollection>
@@ -955,7 +955,7 @@ checkeo_inventario_id_inv</osdmAllTables:FKReferredColumnName>
          <osdmAllTables:TableName>mantencion</osdmAllTables:TableName>
          <osdmAllTables:EncodedTableName>3CA512C1-C923888F9051</osdmAllTables:EncodedTableName>
          <osdmAllTables:DiagramSuffix>__dg_rm_1</osdmAllTables:DiagramSuffix>
-         <osdmAllTables:FunctionalName>mantencion </osdmAllTables:FunctionalName>
+         <osdmAllTables:FunctionalName>mantencion</osdmAllTables:FunctionalName>
          <osdmAllTables:Abbreviation/>
          <osdmAllTables:ClassificationTypeName/>
          <osdmAllTables:ObjectTypeName/>
@@ -971,8 +971,8 @@ checkeo_inventario_id_inv</osdmAllTables:FKReferredColumnName>
          </osdmAllTables:QuantitativeInfoCollection>
          <osdmAllTables:DiagramsCollection>
             <osdmAllTables:Diagram>
-               <osdmAllTables:Name>/Relational_1</osdmAllTables:Name>
-               <osdmAllTables:Link>Relational_1</osdmAllTables:Link>
+               <osdmAllTables:Name>/BD_Arriendo</osdmAllTables:Name>
+               <osdmAllTables:Link>BD_Arriendo</osdmAllTables:Link>
                <osdmAllTables:Suffix>__dg_rm_1</osdmAllTables:Suffix>
             </osdmAllTables:Diagram>
          </osdmAllTables:DiagramsCollection>
@@ -1009,7 +1009,7 @@ checkeo_inventario_id_inv</osdmAllTables:FKReferredColumnName>
                <osdmAllTables:PK/>
                <osdmAllTables:FK/>
                <osdmAllTables:M>Y</osdmAllTables:M>
-               <osdmAllTables:DataType>NUMERIC</osdmAllTables:DataType>
+               <osdmAllTables:DataType>NUMERIC (10)</osdmAllTables:DataType>
                <osdmAllTables:DataTypeKind>LT</osdmAllTables:DataTypeKind>
                <osdmAllTables:DomainName/>
                <osdmAllTables:Formula/>
@@ -1100,8 +1100,8 @@ checkeo_inventario_id_inv</osdmAllTables:FKReferredColumnName>
          </osdmAllTables:QuantitativeInfoCollection>
          <osdmAllTables:DiagramsCollection>
             <osdmAllTables:Diagram>
-               <osdmAllTables:Name>/Relational_1</osdmAllTables:Name>
-               <osdmAllTables:Link>Relational_1</osdmAllTables:Link>
+               <osdmAllTables:Name>/BD_Arriendo</osdmAllTables:Name>
+               <osdmAllTables:Link>BD_Arriendo</osdmAllTables:Link>
                <osdmAllTables:Suffix>__dg_rm_1</osdmAllTables:Suffix>
             </osdmAllTables:Diagram>
          </osdmAllTables:DiagramsCollection>
@@ -1125,7 +1125,7 @@ checkeo_inventario_id_inv</osdmAllTables:FKReferredColumnName>
                <osdmAllTables:PK/>
                <osdmAllTables:FK/>
                <osdmAllTables:M>Y</osdmAllTables:M>
-               <osdmAllTables:DataType>VARCHAR (30) </osdmAllTables:DataType>
+               <osdmAllTables:DataType>VARCHAR (250) </osdmAllTables:DataType>
                <osdmAllTables:DataTypeKind>LT</osdmAllTables:DataTypeKind>
                <osdmAllTables:DomainName/>
                <osdmAllTables:Formula/>
@@ -1218,8 +1218,8 @@ inventario_id_inv</osdmAllTables:FKReferredColumnName>
          </osdmAllTables:QuantitativeInfoCollection>
          <osdmAllTables:DiagramsCollection>
             <osdmAllTables:Diagram>
-               <osdmAllTables:Name>/Relational_1</osdmAllTables:Name>
-               <osdmAllTables:Link>Relational_1</osdmAllTables:Link>
+               <osdmAllTables:Name>/BD_Arriendo</osdmAllTables:Name>
+               <osdmAllTables:Link>BD_Arriendo</osdmAllTables:Link>
                <osdmAllTables:Suffix>__dg_rm_1</osdmAllTables:Suffix>
             </osdmAllTables:Diagram>
          </osdmAllTables:DiagramsCollection>
@@ -1230,7 +1230,7 @@ inventario_id_inv</osdmAllTables:FKReferredColumnName>
                <osdmAllTables:PK>P</osdmAllTables:PK>
                <osdmAllTables:FK/>
                <osdmAllTables:M>Y</osdmAllTables:M>
-               <osdmAllTables:DataType>VARCHAR (10) </osdmAllTables:DataType>
+               <osdmAllTables:DataType>NUMERIC (10)</osdmAllTables:DataType>
                <osdmAllTables:DataTypeKind>LT</osdmAllTables:DataTypeKind>
                <osdmAllTables:DomainName/>
                <osdmAllTables:Formula/>
@@ -1316,16 +1316,6 @@ inventario_id_inv</osdmAllTables:FKReferredColumnName>
          </osdmAllTables:IndexesCollection>
          <osdmAllTables:FKRTCollection>
             <osdmAllTables:FKRTDetails>
-               <osdmAllTables:FKName>pago_reserva_FK</osdmAllTables:FKName>
-               <osdmAllTables:FKReferringTo>reserva</osdmAllTables:FKReferringTo>
-               <osdmAllTables:FKMandatory/>
-               <osdmAllTables:FKTransferable>Y</osdmAllTables:FKTransferable>
-               <osdmAllTables:FKInArc/>
-               <osdmAllTables:FKReferringColumnName>reserva_id_reserva</osdmAllTables:FKReferringColumnName>
-               <osdmAllTables:FKReferredColumnName>id_reserva</osdmAllTables:FKReferredColumnName>
-               <osdmAllTables:FKDeleteRule/>
-            </osdmAllTables:FKRTDetails>
-            <osdmAllTables:FKRTDetails>
                <osdmAllTables:FKName>pago_usuario_FK</osdmAllTables:FKName>
                <osdmAllTables:FKReferringTo>usuario</osdmAllTables:FKReferringTo>
                <osdmAllTables:FKMandatory>Y</osdmAllTables:FKMandatory>
@@ -1333,6 +1323,16 @@ inventario_id_inv</osdmAllTables:FKReferredColumnName>
                <osdmAllTables:FKInArc/>
                <osdmAllTables:FKReferringColumnName>usuario_rut_usuario</osdmAllTables:FKReferringColumnName>
                <osdmAllTables:FKReferredColumnName>rut_usuario</osdmAllTables:FKReferredColumnName>
+               <osdmAllTables:FKDeleteRule/>
+            </osdmAllTables:FKRTDetails>
+            <osdmAllTables:FKRTDetails>
+               <osdmAllTables:FKName>pago_reserva_FK</osdmAllTables:FKName>
+               <osdmAllTables:FKReferringTo>reserva</osdmAllTables:FKReferringTo>
+               <osdmAllTables:FKMandatory/>
+               <osdmAllTables:FKTransferable>Y</osdmAllTables:FKTransferable>
+               <osdmAllTables:FKInArc/>
+               <osdmAllTables:FKReferringColumnName>reserva_id_reserva</osdmAllTables:FKReferringColumnName>
+               <osdmAllTables:FKReferredColumnName>id_reserva</osdmAllTables:FKReferredColumnName>
                <osdmAllTables:FKDeleteRule/>
             </osdmAllTables:FKRTDetails>
          </osdmAllTables:FKRTCollection>
@@ -1357,8 +1357,8 @@ inventario_id_inv</osdmAllTables:FKReferredColumnName>
          </osdmAllTables:QuantitativeInfoCollection>
          <osdmAllTables:DiagramsCollection>
             <osdmAllTables:Diagram>
-               <osdmAllTables:Name>/Relational_1</osdmAllTables:Name>
-               <osdmAllTables:Link>Relational_1</osdmAllTables:Link>
+               <osdmAllTables:Name>/BD_Arriendo</osdmAllTables:Name>
+               <osdmAllTables:Link>BD_Arriendo</osdmAllTables:Link>
                <osdmAllTables:Suffix>__dg_rm_1</osdmAllTables:Suffix>
             </osdmAllTables:Diagram>
          </osdmAllTables:DiagramsCollection>
@@ -1455,16 +1455,6 @@ inventario_id_inv</osdmAllTables:FKReferredColumnName>
          </osdmAllTables:IndexesCollection>
          <osdmAllTables:FKRTCollection>
             <osdmAllTables:FKRTDetails>
-               <osdmAllTables:FKName>reserva_dpto_FK</osdmAllTables:FKName>
-               <osdmAllTables:FKReferringTo>dpto</osdmAllTables:FKReferringTo>
-               <osdmAllTables:FKMandatory>Y</osdmAllTables:FKMandatory>
-               <osdmAllTables:FKTransferable>Y</osdmAllTables:FKTransferable>
-               <osdmAllTables:FKInArc/>
-               <osdmAllTables:FKReferringColumnName>dpto_id_dpto</osdmAllTables:FKReferringColumnName>
-               <osdmAllTables:FKReferredColumnName>id_dpto</osdmAllTables:FKReferredColumnName>
-               <osdmAllTables:FKDeleteRule/>
-            </osdmAllTables:FKRTDetails>
-            <osdmAllTables:FKRTDetails>
                <osdmAllTables:FKName>reserva_cliente_FK</osdmAllTables:FKName>
                <osdmAllTables:FKReferringTo>cliente</osdmAllTables:FKReferringTo>
                <osdmAllTables:FKMandatory/>
@@ -1472,6 +1462,16 @@ inventario_id_inv</osdmAllTables:FKReferredColumnName>
                <osdmAllTables:FKInArc/>
                <osdmAllTables:FKReferringColumnName>cliente_id_cliente</osdmAllTables:FKReferringColumnName>
                <osdmAllTables:FKReferredColumnName>id_cliente</osdmAllTables:FKReferredColumnName>
+               <osdmAllTables:FKDeleteRule/>
+            </osdmAllTables:FKRTDetails>
+            <osdmAllTables:FKRTDetails>
+               <osdmAllTables:FKName>reserva_dpto_FK</osdmAllTables:FKName>
+               <osdmAllTables:FKReferringTo>dpto</osdmAllTables:FKReferringTo>
+               <osdmAllTables:FKMandatory>Y</osdmAllTables:FKMandatory>
+               <osdmAllTables:FKTransferable>Y</osdmAllTables:FKTransferable>
+               <osdmAllTables:FKInArc/>
+               <osdmAllTables:FKReferringColumnName>dpto_id_dpto</osdmAllTables:FKReferringColumnName>
+               <osdmAllTables:FKReferredColumnName>id_dpto</osdmAllTables:FKReferredColumnName>
                <osdmAllTables:FKDeleteRule/>
             </osdmAllTables:FKRTDetails>
          </osdmAllTables:FKRTCollection>
@@ -1519,7 +1519,7 @@ inventario_id_inv</osdmAllTables:FKReferredColumnName>
          <osdmAllTables:MVPrebuilt/>
          <osdmAllTables:MVQuery/>
          <osdmAllTables:QuantitativeInfoCollection>
-            <osdmAllTables:NumberOfColumns>7</osdmAllTables:NumberOfColumns>
+            <osdmAllTables:NumberOfColumns>6</osdmAllTables:NumberOfColumns>
             <osdmAllTables:NumberOfRowsMin>0</osdmAllTables:NumberOfRowsMin>
             <osdmAllTables:NumberOfRowsMax>9999999</osdmAllTables:NumberOfRowsMax>
             <osdmAllTables:ExpectedNumberOfRows>0</osdmAllTables:ExpectedNumberOfRows>
@@ -1528,8 +1528,8 @@ inventario_id_inv</osdmAllTables:FKReferredColumnName>
          </osdmAllTables:QuantitativeInfoCollection>
          <osdmAllTables:DiagramsCollection>
             <osdmAllTables:Diagram>
-               <osdmAllTables:Name>/Relational_1</osdmAllTables:Name>
-               <osdmAllTables:Link>Relational_1</osdmAllTables:Link>
+               <osdmAllTables:Name>/BD_Arriendo</osdmAllTables:Name>
+               <osdmAllTables:Link>BD_Arriendo</osdmAllTables:Link>
                <osdmAllTables:Suffix>__dg_rm_1</osdmAllTables:Suffix>
             </osdmAllTables:Diagram>
          </osdmAllTables:DiagramsCollection>
@@ -1562,19 +1562,6 @@ inventario_id_inv</osdmAllTables:FKReferredColumnName>
             </osdmAllTables:ColumnDetails>
             <osdmAllTables:ColumnDetails>
                <osdmAllTables:Sequence>3</osdmAllTables:Sequence>
-               <osdmAllTables:ColumnName>duracion</osdmAllTables:ColumnName>
-               <osdmAllTables:PK/>
-               <osdmAllTables:FK/>
-               <osdmAllTables:M>Y</osdmAllTables:M>
-               <osdmAllTables:DataType>NUMERIC (10)</osdmAllTables:DataType>
-               <osdmAllTables:DataTypeKind>LT</osdmAllTables:DataTypeKind>
-               <osdmAllTables:DomainName/>
-               <osdmAllTables:Formula/>
-               <osdmAllTables:Security/>
-               <osdmAllTables:PreferredAbbreviation/>
-            </osdmAllTables:ColumnDetails>
-            <osdmAllTables:ColumnDetails>
-               <osdmAllTables:Sequence>4</osdmAllTables:Sequence>
                <osdmAllTables:ColumnName>punto_reunion</osdmAllTables:ColumnName>
                <osdmAllTables:PK/>
                <osdmAllTables:FK/>
@@ -1587,7 +1574,7 @@ inventario_id_inv</osdmAllTables:FKReferredColumnName>
                <osdmAllTables:PreferredAbbreviation/>
             </osdmAllTables:ColumnDetails>
             <osdmAllTables:ColumnDetails>
-               <osdmAllTables:Sequence>5</osdmAllTables:Sequence>
+               <osdmAllTables:Sequence>4</osdmAllTables:Sequence>
                <osdmAllTables:ColumnName>horario_salida</osdmAllTables:ColumnName>
                <osdmAllTables:PK/>
                <osdmAllTables:FK/>
@@ -1600,7 +1587,7 @@ inventario_id_inv</osdmAllTables:FKReferredColumnName>
                <osdmAllTables:PreferredAbbreviation/>
             </osdmAllTables:ColumnDetails>
             <osdmAllTables:ColumnDetails>
-               <osdmAllTables:Sequence>6</osdmAllTables:Sequence>
+               <osdmAllTables:Sequence>5</osdmAllTables:Sequence>
                <osdmAllTables:ColumnName>horario_llegada</osdmAllTables:ColumnName>
                <osdmAllTables:PK/>
                <osdmAllTables:FK/>
@@ -1613,7 +1600,7 @@ inventario_id_inv</osdmAllTables:FKReferredColumnName>
                <osdmAllTables:PreferredAbbreviation/>
             </osdmAllTables:ColumnDetails>
             <osdmAllTables:ColumnDetails>
-               <osdmAllTables:Sequence>7</osdmAllTables:Sequence>
+               <osdmAllTables:Sequence>6</osdmAllTables:Sequence>
                <osdmAllTables:ColumnName>valor</osdmAllTables:ColumnName>
                <osdmAllTables:PK/>
                <osdmAllTables:FK/>
@@ -1670,8 +1657,8 @@ inventario_id_inv</osdmAllTables:FKReferredColumnName>
          </osdmAllTables:QuantitativeInfoCollection>
          <osdmAllTables:DiagramsCollection>
             <osdmAllTables:Diagram>
-               <osdmAllTables:Name>/Relational_1</osdmAllTables:Name>
-               <osdmAllTables:Link>Relational_1</osdmAllTables:Link>
+               <osdmAllTables:Name>/BD_Arriendo</osdmAllTables:Name>
+               <osdmAllTables:Link>BD_Arriendo</osdmAllTables:Link>
                <osdmAllTables:Suffix>__dg_rm_1</osdmAllTables:Suffix>
             </osdmAllTables:Diagram>
          </osdmAllTables:DiagramsCollection>
@@ -1682,7 +1669,7 @@ inventario_id_inv</osdmAllTables:FKReferredColumnName>
                <osdmAllTables:PK>P</osdmAllTables:PK>
                <osdmAllTables:FK/>
                <osdmAllTables:M>Y</osdmAllTables:M>
-               <osdmAllTables:DataType>NUMERIC</osdmAllTables:DataType>
+               <osdmAllTables:DataType>NUMERIC (10)</osdmAllTables:DataType>
                <osdmAllTables:DataTypeKind>LT</osdmAllTables:DataTypeKind>
                <osdmAllTables:DomainName/>
                <osdmAllTables:Formula/>
@@ -1812,8 +1799,8 @@ inventario_id_inv</osdmAllTables:FKReferredColumnName>
          </osdmAllTables:QuantitativeInfoCollection>
          <osdmAllTables:DiagramsCollection>
             <osdmAllTables:Diagram>
-               <osdmAllTables:Name>/Relational_1</osdmAllTables:Name>
-               <osdmAllTables:Link>Relational_1</osdmAllTables:Link>
+               <osdmAllTables:Name>/BD_Arriendo</osdmAllTables:Name>
+               <osdmAllTables:Link>BD_Arriendo</osdmAllTables:Link>
                <osdmAllTables:Suffix>__dg_rm_1</osdmAllTables:Suffix>
             </osdmAllTables:Diagram>
          </osdmAllTables:DiagramsCollection>
