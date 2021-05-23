@@ -34,7 +34,7 @@ namespace ArriendoTemporada.Negocio
                 Servicio = new Servicio()
                 {
                     Id_Servicio = rs.SERVICIO.ID_SERVICIO,
-
+                    NombreServ = rs.SERVICIO.NOMBRE,
 
                 }
             }).Where(r => r.Cliente_Id == cliente_id).ToList();
